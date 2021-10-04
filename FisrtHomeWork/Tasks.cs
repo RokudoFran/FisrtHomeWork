@@ -8,72 +8,73 @@ namespace FisrtHomeWork
 {
     class Tasks
     {
-        public static string Exercise1(Double A, Double B)
+        public static string Exercise1(double a, double b)
         {
-            string Message = "";
-            Double C = 5 * A + B * B;
+            string message = "";
+            double c = 5 * a + b * b;
 
-            Double D = B - A;
+            double d = b - a;
 
-            if (D == 0)
+            if (d == 0)
             {
-                Message = "Разница между B и A равна 0, невозможно вычислить значение выражения";
+                message = "Разница между B и A равна 0, невозможно вычислить значение выражения";
             }
             else
             {
-                Double F = C / D;
+                double f = c / d;
 
-                Message = $"Значение выражения ( 5 * A + B * B ) / ( B - A ) при A = {A} и B = {B} равно {F}";
+                message = $"Значение выражения ( 5 * A + B * B ) / ( B - A ) при A = {a} и B = {b} равно {f}";
             }
 
-            return Message;
+            return message;
         }
 
-        public static string Exercise2(string A, string B)
+        public static string Exercise2(string a, string b
+            )
         {
-            String C = "";
+            String c = "";
 
-            C = A;
-            A = B;
-            B = C;
+            c = a;
+            a = b;
+            b = c;
 
-            string Message = "";
+            string message = "";
 
-            Message = $"Значение A = {A} и значение B = {B}";
+            message = $"Значение A = {a} и значение B = {b}";
 
-            return Message;
+            return message;
 
         }
 
-        public static string Exercise3(Double A, Double B)
+        public static string Exercise3(double a, double b)
         {
-            string Message = "";
+            string message = "";
             int del;
             double ost;
 
-            if ((B == 0)||(A<B)) 
+            if ((b == 0)||(a<b)) 
             {
-                Message = $"Невозможно вывести результат деления A на B";
+                message = $"Невозможно вывести результат деления A на B";
             }
             else
             {
-                del = Convert.ToInt32 (A / B);
-                ost = B % A;
+                del = Convert.ToInt32 (a / b);
+                ost = b % a;
                 
-                Message = $"Результат деления A на B = {del} и остаток от деления={ost}";
+                message = $"Результат деления A на B = {del} и остаток от деления={ost}";
             }
-            return Message;
+            return message;
 
         }
 
-        public static string Exercise4(float A, float B, float C)
+        public static string Exercise4(float a, float b, float c)
         {
-            string Message = "";
+            string message = "";
             float x = 0;
 
-            x = (C - B) / A;
-            Message = $"Решение (значение X) линейного уравнения стандартного вида, где A * X + B = C равно {x}";
-            return Message;
+            x = (c - b) / a;
+            message = $"Решение (значение X) линейного уравнения стандартного вида, где A * X + B = C равно {x}";
+            return message;
         }
 
         public static string Exercise5(float x1, float y1, float x2, float y2)
